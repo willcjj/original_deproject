@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--      <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/style.css') }}" />-->
+      <link rel="stylesheet" type="text/css" href= "style.css" />
+        
+        
+    <!--    Melissa-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        
+        
+    <title>Drug Education Project</title>
+
+    </head>
+
+    <body>
+        <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+        </script>
+      <div class="container main-form">
+<!--
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+          aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            <span class="sr-only">70% Complete</span>
+          </div>
+        </div>
+-->
+<!--        <form action="{{ url_for('result') }}" method="post">-->
+        <div class="row">
+          <div class="col">
+              <br>
+            <h2>1. Alcohol Consumption in the Past 2 Weeks</h2>
+            <p>
+              For A, did you consume alcohol for that day? Please state Yes or No.<br>
+              For B, approximately how many drinks did you consume? Please input your amount in whole numbers.<br>
+              For C, for how long did you consume these drinks (unit: hours)? Please input your amount in whole numbers.
+                
+                 <a href="#" data-html="true" data-toggle="popover" data-trigger="hover" title="A Drink is..." data-content="<ul><li>12 ounces of regular beer, which is usually about 5% alcohol</li><li>5 ounces of wine, which is typically about 12% alcohol</li><li>1.5 ounces of distilled spirits, which is about 40% alcohol</li></ul>"><i class="far fa-question-circle"></i></a>
+
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <table class="calendar">
+                <colgroup>
+                    <col class="ten" />
+                    <col class="ten" />
+                    <col class="ten" />
+                    <col class="ten" />
+                    <col class="ten" />
+                    <col class="ten" />
+                    <col class="ten" />
+                </colgroup>
+              <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type ="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" class="box" placeholder="A"/>
+                  <input type="number" name="boxone" class="box" placeholder="B"/>
+                  <input type="number" name="boxone" class="box" placeholder="C"/>
+                </td>
+              </tr>
+              <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type ="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" placeholder="A"/>
+                  <input type="number" name="boxone" placeholder="B"/>
+                  <input type="number" name="boxone" placeholder="C"/>
+                </td>
+                <td>
+                  <input type="text" name="boxone" class="box" placeholder="A"/>
+                  <input type="number" name="boxone" class="box" placeholder="B"/>
+                  <input type="number" name="boxone" class="box" placeholder="C"/>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+          <br><br>
+        <div class="row">
+          <div class="col">
+
+            <h2>2. Brief Young Adult Alcohol Consequences Questionnaire</h2>
+            <p>
+              Below is a list of things that sometimes happen to people either during or after they have been drinking alcohol.  Next to each item below, please mark an “☑” in either the NO or the YES column to indicate whether that item describes something that has happened to you IN THE PAST YEAR.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <table class="two">
+              <tr>
+                <th>In the past year...</th>
+                <th>YES</th>
+                <th>NO</th>
+              </tr>
+              <tr>
+                <td>1. I have had a hangover (headache, sick stomach) the morning after I had been drinking.</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+              </tr>
+              <tr>
+                <td>2. I have taken foolish risks when I have been drinking.</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+              </tr>
+              <tr>
+                <td>3. I’ve not been able to remember large stretches of time while drinking heavily.</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+              </tr>
+                <tr>
+                    <td>4. The quality of my work or school work has suffered because of my drinking.</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>5. I have had less energy or felt tired because of my drinking.</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>6. My drinking has gotten me into sexual situations I later regretted.</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>    
+                    
+                <tr>
+                    <td>7. I often have ended up drinking on nights when I had planned not to drink.</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>    
+                    
+                <tr>
+                    <td>8. My physical appearance has been harmed by my drinking.</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>    
+                <tr>
+                    <td>9. While drinking, I have said or done embarrassing things.</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>    
+                <tr>
+                    <td>10. I have felt very sick to my stomach or thrown up after drinking.</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+              <tr>
+
+              </tr>
+            </table>
+          </div>
+        </div>
+          <center><a href="result.html"><button class="button">Submit</button></a></center>
+<!--          </form>-->
+
+      </div>
+        
+        <form action="{{ url_for('result') }}" method="post">
+  <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car<br>
+  <input type="submit" value="Submit">
+</form>
+
+    </body>
+
+  </html>

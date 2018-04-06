@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/style.css') }}" />-->
+      <link rel="stylesheet" type="text/css" href= "style.css" />
+
+    <title>Drug Education Project</title>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row home">
+        <div class="unc-background">
+            <img src="ramses.jpg" alt="UNC mascot Ramses" />
+<!--          <img src="/static/images/ramses.jpg" alt="UNC mascot Ramses" />-->
+        </div>
+        <div class="description">
+          <h1>Drug Education Program</h1>
+          <br />
+          <p>
+          This short program will ask you questions about how much alcohol you drink and which drugs you use (illegal, prescription, and over-the-counter). When you are finished, you’ll instantly get a response with information specific to what you answered. Your information can help you increase your health and improve your athletic performance.
+          </p>
+          <br />
+          <div class="home-button">
+            <div>
+              <form method="POST" action="/result">
+                <p>Enter your Unique ID Number</p>
+                <input />
+                <br/>
+                <br/>
+                  <p>Please choose which team you play for:</p>
+                  <p>Athletic Team: <select name="Team">
+                    <option value="basketball">Basketball</option>
+                    <option value="baseball">Baseball</option>
+                    <option value="football">Football</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="soccer">Soccer</option>
+                  </select>
+                  </p>
+              </form>
+            </div>
+            <a href="hello.html"><button>Next</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
